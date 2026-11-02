@@ -86,6 +86,7 @@ actions!(
         ShowBacklinks,
         AskYourNotes,
         SummarizeNote,
+        TidyVoiceNote,
     ]
 );
 
@@ -2564,6 +2565,15 @@ impl Render for Workspace {
                 this.show_inspector(Some(InspectorTab::Ask), cx);
                 this.inspector
                     .update(cx, |inspector, cx| inspector.summarize_note(window, cx));
+            }))
+            .on_action(cx.listener(|this, _: &TidyVoiceNote, window, cx| {
+                if !cx.global::<AppState>().config.ai.enabled {
+                    return;
+                }
+                this.close_settings(window, cx);
+                if let Some(id) = this.editor.read(cx).note_id().map(str::to_owned) {
+                    crate::voice_tidy::tidy_note(id, window, cx);
+                }
             }))
             .on_action(cx.listener(|this, _: &AskYourNotes, window, cx| {
                 if !cx.global::<AppState>().config.ai.enabled {
