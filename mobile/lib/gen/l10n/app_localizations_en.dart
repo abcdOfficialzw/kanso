@@ -3238,16 +3238,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String historyOrigin(String origin) {
-    String _temp0 = intl.Intl.selectLogic(origin, {
-      'ui': 'Edited in Kanso',
-      'api': 'Replaced through the API',
-      'sync': 'Replaced by sync',
-      'import': 'Replaced by an import',
-      'collab': 'Edited in a shared note',
-      'agent': 'Suggested by an agent, applied by you',
-      'plugin': 'Changed by a plugin',
-      'other': 'Saved version',
-    });
+    String _temp0 = intl.Intl.selectLogic(
+      origin,
+      {
+        'ui': 'Edited in Kanso',
+        'api': 'Replaced through the API',
+        'sync': 'Replaced by sync',
+        'import': 'Replaced by an import',
+        'collab': 'Edited in a shared note',
+        'agent': 'Suggested by an agent, applied by you',
+        'plugin': 'Changed by a plugin',
+        'other': 'Saved version',
+      },
+    );
     return '$_temp0';
   }
 
@@ -5022,4 +5025,77 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get aiTroubleSettings => 'AI settings';
+
+  @override
+  String get voiceTidy => 'Tidy';
+
+  @override
+  String get voiceTidyOffer =>
+      'Tidy this voice note: a title, short paragraphs and tasks. The transcript stays.';
+
+  @override
+  String get voiceTidyWorking => 'Tidying…';
+
+  @override
+  String voiceTidyFailed(String reason) {
+    return 'Couldn\'t tidy this note: $reason.';
+  }
+
+  @override
+  String get voiceTidyTryAgain => 'Try again';
+
+  @override
+  String get voiceSettingsCaptureSection => 'Voice notes';
+
+  @override
+  String get voiceSettingsTidy => 'Tidy voice notes';
+
+  @override
+  String get voiceSettingsTidyOff => 'Off';
+
+  @override
+  String get voiceSettingsTidyAsk => 'Ask each time';
+
+  @override
+  String get voiceSettingsTidyAlways => 'Always';
+
+  @override
+  String get voiceSettingsTidyHelp =>
+      'Your own AI gives a voice note a title, short paragraphs and tasks for what was said you would do. Only the words are sent. The transcript stays in the note, folded under it.';
+
+  @override
+  String get voiceSettingsTidyNeedsAi =>
+      'Set up AI in Settings › AI to tidy notes.';
+
+  @override
+  String get voiceSettingsMeetings => 'Meetings';
+
+  @override
+  String get voiceSettingsMeetingsHelp =>
+      'Treat recordings longer than 3 minutes as meetings. Tidy gives them a Summary, Decisions, Action items and Notes, and their audio is kept.';
+
+  @override
+  String get voiceSettingsKeepAudio => 'Keep audio';
+
+  @override
+  String get voiceSettingsKeepAudioHelp =>
+      'Attach the recording to the voice note. Audio over 10 MB isn\'t kept; the transcript always is.';
+
+  @override
+  String get voiceSettingsServer => 'Use the speech server when needed';
+
+  @override
+  String get voiceSettingsServerHelp =>
+      'When this phone can\'t turn a recording into text by itself, it can send the audio to the system\'s speech service to be transcribed. Off, such a recording waits here, untouched.';
+
+  @override
+  String voiceSettingsWaiting(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count recordings are waiting to be transcribed',
+      one: '1 recording is waiting to be transcribed',
+    );
+    return '$_temp0';
+  }
 }
