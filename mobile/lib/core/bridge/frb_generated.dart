@@ -62,12 +62,8 @@ class KansoCore
 
   /// Initialize flutter_rust_bridge in mock mode.
   /// No libraries for FFI are loaded.
-  static void initMock({
-    required KansoCoreApi api,
-  }) {
-    instance.initMockImpl(
-      api: api,
-    );
+  static void initMock({required KansoCoreApi api}) {
+    instance.initMockImpl(api: api);
   }
 
   /// Dispose flutter_rust_bridge
@@ -3276,10 +3272,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiAccountKansoAccountStateConstMeta =>
-      const TaskConstMeta(
-        debugName: "KansoAccount_state",
-        argNames: ["that"],
-      );
+      const TaskConstMeta(debugName: "KansoAccount_state", argNames: ["that"]);
 
   @override
   Stream<AccountState> crateApiAccountKansoAccountStateStream({
@@ -3383,10 +3376,8 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
     );
   }
 
-  TaskConstMeta get kCrateApiAiKansoAiRunStopConstMeta => const TaskConstMeta(
-    debugName: "KansoAiRun_stop",
-    argNames: ["that"],
-  );
+  TaskConstMeta get kCrateApiAiKansoAiRunStopConstMeta =>
+      const TaskConstMeta(debugName: "KansoAiRun_stop", argNames: ["that"]);
 
   @override
   List<AiAction> crateApiAiKansoAiActions({required KansoAi that}) {
@@ -3411,10 +3402,8 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
     );
   }
 
-  TaskConstMeta get kCrateApiAiKansoAiActionsConstMeta => const TaskConstMeta(
-    debugName: "KansoAi_actions",
-    argNames: ["that"],
-  );
+  TaskConstMeta get kCrateApiAiKansoAiActionsConstMeta =>
+      const TaskConstMeta(debugName: "KansoAi_actions", argNames: ["that"]);
 
   @override
   Stream<AssistEvent> crateApiAiKansoAiAssist({
@@ -3564,10 +3553,8 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
     );
   }
 
-  TaskConstMeta get kCrateApiAiKansoAiNewRunConstMeta => const TaskConstMeta(
-    debugName: "KansoAi_new_run",
-    argNames: ["that"],
-  );
+  TaskConstMeta get kCrateApiAiKansoAiNewRunConstMeta =>
+      const TaskConstMeta(debugName: "KansoAi_new_run", argNames: ["that"]);
 
   @override
   Future<bool> crateApiAiKansoAiNoteAllowed({
@@ -3668,10 +3655,8 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
     );
   }
 
-  TaskConstMeta get kCrateApiAiKansoAiProvidersConstMeta => const TaskConstMeta(
-    debugName: "KansoAi_providers",
-    argNames: ["that"],
-  );
+  TaskConstMeta get kCrateApiAiKansoAiProvidersConstMeta =>
+      const TaskConstMeta(debugName: "KansoAi_providers", argNames: ["that"]);
 
   @override
   Future<void> crateApiAiKansoAiSetKey({
@@ -3778,10 +3763,8 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
     );
   }
 
-  TaskConstMeta get kCrateApiAiKansoAiSettingsConstMeta => const TaskConstMeta(
-    debugName: "KansoAi_settings",
-    argNames: ["that"],
-  );
+  TaskConstMeta get kCrateApiAiKansoAiSettingsConstMeta =>
+      const TaskConstMeta(debugName: "KansoAi_settings", argNames: ["that"]);
 
   @override
   Future<AiSummary> crateApiAiKansoAiSummariseBrief({
@@ -3942,10 +3925,8 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
     );
   }
 
-  TaskConstMeta get kCrateApiAiKansoAiTestConstMeta => const TaskConstMeta(
-    debugName: "KansoAi_test",
-    argNames: ["that"],
-  );
+  TaskConstMeta get kCrateApiAiKansoAiTestConstMeta =>
+      const TaskConstMeta(debugName: "KansoAi_test", argNames: ["that"]);
 
   @override
   Future<List<ApprovalPrompt>> crateApiApprovalsKansoApprovalsApprove({
@@ -5044,10 +5025,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiEditorKansoEditorCloseConstMeta =>
-      const TaskConstMeta(
-        debugName: "KansoEditor_close",
-        argNames: ["that"],
-      );
+      const TaskConstMeta(debugName: "KansoEditor_close", argNames: ["that"]);
 
   @override
   EditOutcome? crateApiEditorKansoEditorCommand({
@@ -5336,10 +5314,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiEditorKansoEditorFlushConstMeta =>
-      const TaskConstMeta(
-        debugName: "KansoEditor_flush",
-        argNames: ["that"],
-      );
+      const TaskConstMeta(debugName: "KansoEditor_flush", argNames: ["that"]);
 
   @override
   Future<SaveState> crateApiEditorKansoEditorKeepMine({
@@ -5517,10 +5492,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiEditorKansoEditorRedoConstMeta =>
-      const TaskConstMeta(
-        debugName: "KansoEditor_redo",
-        argNames: ["that"],
-      );
+      const TaskConstMeta(debugName: "KansoEditor_redo", argNames: ["that"]);
 
   @override
   Future<List<CursorMark>> crateApiEditorKansoEditorRemoteCursors({
@@ -5888,10 +5860,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiEditorKansoEditorUndoConstMeta =>
-      const TaskConstMeta(
-        debugName: "KansoEditor_undo",
-        argNames: ["that"],
-      );
+      const TaskConstMeta(debugName: "KansoEditor_undo", argNames: ["that"]);
 
   @override
   Future<EditorSnapshot> crateApiEditorKansoEditorUseTheirs({
@@ -6218,10 +6187,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiLibraryKansoLibraryAiConstMeta =>
-      const TaskConstMeta(
-        debugName: "KansoLibrary_ai",
-        argNames: ["that"],
-      );
+      const TaskConstMeta(debugName: "KansoLibrary_ai", argNames: ["that"]);
 
   @override
   KansoApprovals crateApiLibraryKansoLibraryApprovals({
@@ -6514,10 +6480,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiLibraryKansoLibraryBriefConstMeta =>
-      const TaskConstMeta(
-        debugName: "KansoLibrary_brief",
-        argNames: ["that"],
-      );
+      const TaskConstMeta(debugName: "KansoLibrary_brief", argNames: ["that"]);
 
   @override
   Future<List<PlannedNotice>> crateApiLibraryKansoLibraryBriefPlan({
@@ -7814,10 +7777,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiLibraryKansoLibraryLocksConstMeta =>
-      const TaskConstMeta(
-        debugName: "KansoLibrary_locks",
-        argNames: ["that"],
-      );
+      const TaskConstMeta(debugName: "KansoLibrary_locks", argNames: ["that"]);
 
   @override
   KansoMetrics crateApiLibraryKansoLibraryMetrics({
@@ -8215,10 +8175,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiLibraryKansoLibraryOpenConstMeta =>
-      const TaskConstMeta(
-        debugName: "KansoLibrary_open",
-        argNames: ["path"],
-      );
+      const TaskConstMeta(debugName: "KansoLibrary_open", argNames: ["path"]);
 
   @override
   Future<OpenedDocuments> crateApiLibraryKansoLibraryOpenDocuments({
@@ -9537,10 +9494,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiLibraryKansoLibrarySharedConstMeta =>
-      const TaskConstMeta(
-        debugName: "KansoLibrary_shared",
-        argNames: ["that"],
-      );
+      const TaskConstMeta(debugName: "KansoLibrary_shared", argNames: ["that"]);
 
   @override
   List<StatusChoice> crateApiLibraryKansoLibraryStatuses() {
@@ -9566,10 +9520,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiLibraryKansoLibraryStatusesConstMeta =>
-      const TaskConstMeta(
-        debugName: "KansoLibrary_statuses",
-        argNames: [],
-      );
+      const TaskConstMeta(debugName: "KansoLibrary_statuses", argNames: []);
 
   @override
   KansoSync crateApiLibraryKansoLibrarySyncing({required KansoLibrary that}) {
@@ -9629,10 +9580,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiLibraryKansoLibraryTagColorsConstMeta =>
-      const TaskConstMeta(
-        debugName: "KansoLibrary_tag_colors",
-        argNames: [],
-      );
+      const TaskConstMeta(debugName: "KansoLibrary_tag_colors", argNames: []);
 
   @override
   Future<TagPlaces> crateApiLibraryKansoLibraryTagPlaces({
@@ -9709,10 +9657,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiLibraryKansoLibraryTagsConstMeta =>
-      const TaskConstMeta(
-        debugName: "KansoLibrary_tags",
-        argNames: ["that"],
-      );
+      const TaskConstMeta(debugName: "KansoLibrary_tags", argNames: ["that"]);
 
   @override
   Future<TaskBoard> crateApiLibraryKansoLibraryTasks({
@@ -9817,10 +9762,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiLibraryKansoLibraryThemesConstMeta =>
-      const TaskConstMeta(
-        debugName: "KansoLibrary_themes",
-        argNames: ["that"],
-      );
+      const TaskConstMeta(debugName: "KansoLibrary_themes", argNames: ["that"]);
 
   @override
   Future<String> crateApiLibraryKansoLibraryTodayNote({
@@ -10011,10 +9953,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiLibraryKansoLibraryTriageConstMeta =>
-      const TaskConstMeta(
-        debugName: "KansoLibrary_triage",
-        argNames: ["that"],
-      );
+      const TaskConstMeta(debugName: "KansoLibrary_triage", argNames: ["that"]);
 
   @override
   Future<int> crateApiLibraryKansoLibraryUndo({
@@ -10751,10 +10690,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiLocksKansoLocksLockConstMeta =>
-      const TaskConstMeta(
-        debugName: "KansoLocks_lock",
-        argNames: ["that"],
-      );
+      const TaskConstMeta(debugName: "KansoLocks_lock", argNames: ["that"]);
 
   @override
   Stream<LockEvent> crateApiLocksKansoLocksLockEvents({
@@ -12031,10 +11967,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiRendererKansoRendererIconThemesConstMeta =>
-      const TaskConstMeta(
-        debugName: "KansoRenderer_icon_themes",
-        argNames: [],
-      );
+      const TaskConstMeta(debugName: "KansoRenderer_icon_themes", argNames: []);
 
   @override
   Future<PreviewLink> crateApiRendererKansoRendererLinkTarget({
@@ -13823,10 +13756,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiSyncKansoSyncDefaultServerConstMeta =>
-      const TaskConstMeta(
-        debugName: "KansoSync_default_server",
-        argNames: [],
-      );
+      const TaskConstMeta(debugName: "KansoSync_default_server", argNames: []);
 
   @override
   String crateApiSyncKansoSyncIntervalLabel({required int minutes}) {
@@ -14174,10 +14104,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiSyncKansoSyncSettingsConstMeta =>
-      const TaskConstMeta(
-        debugName: "KansoSync_settings",
-        argNames: ["that"],
-      );
+      const TaskConstMeta(debugName: "KansoSync_settings", argNames: ["that"]);
 
   @override
   Future<SyncStatus> crateApiSyncKansoSyncSignInPassword({
@@ -14252,10 +14179,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiSyncKansoSyncSignOutConstMeta =>
-      const TaskConstMeta(
-        debugName: "KansoSync_sign_out",
-        argNames: ["that"],
-      );
+      const TaskConstMeta(debugName: "KansoSync_sign_out", argNames: ["that"]);
 
   @override
   Future<SyncStatus> crateApiSyncKansoSyncStatus({required KansoSync that}) {
@@ -14286,10 +14210,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiSyncKansoSyncStatusConstMeta =>
-      const TaskConstMeta(
-        debugName: "KansoSync_status",
-        argNames: ["that"],
-      );
+      const TaskConstMeta(debugName: "KansoSync_status", argNames: ["that"]);
 
   @override
   SyncStatusLine crateApiSyncKansoSyncStatusLine({
@@ -14401,10 +14322,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiSyncKansoSyncSyncNowConstMeta =>
-      const TaskConstMeta(
-        debugName: "KansoSync_sync_now",
-        argNames: ["that"],
-      );
+      const TaskConstMeta(debugName: "KansoSync_sync_now", argNames: ["that"]);
 
   @override
   Future<ThemeTokens> crateApiThemesKansoThemesFit({
@@ -14591,10 +14509,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiThemesKansoThemesListConstMeta =>
-      const TaskConstMeta(
-        debugName: "KansoThemes_list",
-        argNames: ["that"],
-      );
+      const TaskConstMeta(debugName: "KansoThemes_list", argNames: ["that"]);
 
   @override
   Future<List<ThemeNotice>> crateApiThemesKansoThemesNotices({
@@ -14627,10 +14542,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiThemesKansoThemesNoticesConstMeta =>
-      const TaskConstMeta(
-        debugName: "KansoThemes_notices",
-        argNames: ["that"],
-      );
+      const TaskConstMeta(debugName: "KansoThemes_notices", argNames: ["that"]);
 
   @override
   Future<List<StyledRun>> crateApiThemesKansoThemesStyledRuns({
@@ -15055,10 +14967,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiTriageKansoTriageStatusConstMeta =>
-      const TaskConstMeta(
-        debugName: "KansoTriage_status",
-        argNames: ["that"],
-      );
+      const TaskConstMeta(debugName: "KansoTriage_status", argNames: ["that"]);
 
   @override
   Future<void> crateApiTriageKansoTriageUnreject({
@@ -15413,10 +15322,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiDiagnosticsBackupExcludedConstMeta =>
-      const TaskConstMeta(
-        debugName: "backup_excluded",
-        argNames: ["folder"],
-      );
+      const TaskConstMeta(debugName: "backup_excluded", argNames: ["folder"]);
 
   @override
   String crateApiLibraryBackupsSummary() {
@@ -15442,10 +15348,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiLibraryBackupsSummaryConstMeta =>
-      const TaskConstMeta(
-        debugName: "backups_summary",
-        argNames: [],
-      );
+      const TaskConstMeta(debugName: "backups_summary", argNames: []);
 
   @override
   Dictated? crateApiVoiceDictated({
@@ -15509,10 +15412,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiImportImportKindsForConstMeta =>
-      const TaskConstMeta(
-        debugName: "import_kinds_for",
-        argNames: ["path"],
-      );
+      const TaskConstMeta(debugName: "import_kinds_for", argNames: ["path"]);
 
   @override
   List<ImportSource> crateApiImportImportSources() {
@@ -15538,10 +15438,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiImportImportSourcesConstMeta =>
-      const TaskConstMeta(
-        debugName: "import_sources",
-        argNames: [],
-      );
+      const TaskConstMeta(debugName: "import_sources", argNames: []);
 
   @override
   int crateApiDiscoveryMeaningMinChars() {
@@ -15567,10 +15464,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiDiscoveryMeaningMinCharsConstMeta =>
-      const TaskConstMeta(
-        debugName: "meaning_min_chars",
-        argNames: [],
-      );
+      const TaskConstMeta(debugName: "meaning_min_chars", argNames: []);
 
   @override
   String? crateApiDiscoveryMeaningQuery({required String query}) {
@@ -15597,10 +15491,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiDiscoveryMeaningQueryConstMeta =>
-      const TaskConstMeta(
-        debugName: "meaning_query",
-        argNames: ["query"],
-      );
+      const TaskConstMeta(debugName: "meaning_query", argNames: ["query"]);
 
   @override
   Future<void> crateApiDiagnosticsPanicProbe({required String message}) {
@@ -15628,10 +15519,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiDiagnosticsPanicProbeConstMeta =>
-      const TaskConstMeta(
-        debugName: "panic_probe",
-        argNames: ["message"],
-      );
+      const TaskConstMeta(debugName: "panic_probe", argNames: ["message"]);
 
   @override
   String? crateApiLibraryReplaceApplyLabel({
@@ -15692,10 +15580,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiDiagnosticsSecretsProbeConstMeta =>
-      const TaskConstMeta(
-        debugName: "secrets_probe",
-        argNames: [],
-      );
+      const TaskConstMeta(debugName: "secrets_probe", argNames: []);
 
   @override
   List<ShortcutEntry> crateApiShortcutsShortcutCatalog() {
@@ -15721,10 +15606,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiShortcutsShortcutCatalogConstMeta =>
-      const TaskConstMeta(
-        debugName: "shortcut_catalog",
-        argNames: [],
-      );
+      const TaskConstMeta(debugName: "shortcut_catalog", argNames: []);
 
   @override
   Future<bool> crateApiDiagnosticsTlsReady() {
@@ -15751,10 +15633,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiDiagnosticsTlsReadyConstMeta =>
-      const TaskConstMeta(
-        debugName: "tls_ready",
-        argNames: [],
-      );
+      const TaskConstMeta(debugName: "tls_ready", argNames: []);
 
   @override
   Future<String> crateApiDiagnosticsVersion() {
@@ -15780,10 +15659,8 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
     );
   }
 
-  TaskConstMeta get kCrateApiDiagnosticsVersionConstMeta => const TaskConstMeta(
-    debugName: "version",
-    argNames: [],
-  );
+  TaskConstMeta get kCrateApiDiagnosticsVersionConstMeta =>
+      const TaskConstMeta(debugName: "version", argNames: []);
 
   @override
   String crateApiWordGoalWordGoalFormatCount({required int count}) {
@@ -15874,10 +15751,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiWordGoalWordGoalParseConstMeta =>
-      const TaskConstMeta(
-        debugName: "word_goal_parse",
-        argNames: ["input"],
-      );
+      const TaskConstMeta(debugName: "word_goal_parse", argNames: ["input"]);
 
   @override
   Uint32List crateApiWordGoalWordGoalPresets() {
@@ -15903,10 +15777,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
   }
 
   TaskConstMeta get kCrateApiWordGoalWordGoalPresetsConstMeta =>
-      const TaskConstMeta(
-        debugName: "word_goal_presets",
-        argNames: [],
-      );
+      const TaskConstMeta(debugName: "word_goal_presets", argNames: []);
 
   @override
   double crateApiWordGoalWordGoalProgress({
@@ -16837,9 +16708,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
           server: dco_decode_String(raw[2]),
         );
       case 2:
-        return AccountState_Locked(
-          dco_decode_box_autoadd_locked_info(raw[1]),
-        );
+        return AccountState_Locked(dco_decode_box_autoadd_locked_info(raw[1]));
       case 3:
         return AccountState_Question(
           dco_decode_box_autoadd_binding_question(raw[1]),
@@ -16953,9 +16822,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
       case 7:
         return ApprovalPhase_Expired();
       case 8:
-        return ApprovalPhase_Failed(
-          message: dco_decode_String(raw[1]),
-        );
+        return ApprovalPhase_Failed(message: dco_decode_String(raw[1]));
       default:
         throw Exception("unreachable");
     }
@@ -16998,34 +16865,22 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
       case 0:
         return AskEvent_Searching();
       case 1:
-        return AskEvent_Used(
-          notes: dco_decode_list_ask_note(raw[1]),
-        );
+        return AskEvent_Used(notes: dco_decode_list_ask_note(raw[1]));
       case 2:
-        return AskEvent_Status(
-          line: dco_decode_String(raw[1]),
-        );
+        return AskEvent_Status(line: dco_decode_String(raw[1]));
       case 3:
-        return AskEvent_Answer(
-          markdown: dco_decode_String(raw[1]),
-        );
+        return AskEvent_Answer(markdown: dco_decode_String(raw[1]));
       case 4:
         return AskEvent_Done(
           markdown: dco_decode_String(raw[1]),
           notes: dco_decode_list_ask_note(raw[2]),
         );
       case 5:
-        return AskEvent_NothingMatches(
-          message: dco_decode_String(raw[1]),
-        );
+        return AskEvent_NothingMatches(message: dco_decode_String(raw[1]));
       case 6:
-        return AskEvent_CutOff(
-          message: dco_decode_String(raw[1]),
-        );
+        return AskEvent_CutOff(message: dco_decode_String(raw[1]));
       case 7:
-        return AskEvent_Failed(
-          message: dco_decode_String(raw[1]),
-        );
+        return AskEvent_Failed(message: dco_decode_String(raw[1]));
       case 8:
         return AskEvent_Stopped();
       default:
@@ -17050,25 +16905,15 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
     // Codec=Dco (DartCObject based), see doc to use other codecs
     switch (raw[0]) {
       case 0:
-        return AssistEvent_Status(
-          line: dco_decode_String(raw[1]),
-        );
+        return AssistEvent_Status(line: dco_decode_String(raw[1]));
       case 1:
-        return AssistEvent_Text(
-          text: dco_decode_String(raw[1]),
-        );
+        return AssistEvent_Text(text: dco_decode_String(raw[1]));
       case 2:
-        return AssistEvent_Done(
-          text: dco_decode_String(raw[1]),
-        );
+        return AssistEvent_Done(text: dco_decode_String(raw[1]));
       case 3:
-        return AssistEvent_CutOff(
-          message: dco_decode_String(raw[1]),
-        );
+        return AssistEvent_CutOff(message: dco_decode_String(raw[1]));
       case 4:
-        return AssistEvent_Failed(
-          message: dco_decode_String(raw[1]),
-        );
+        return AssistEvent_Failed(message: dco_decode_String(raw[1]));
       case 5:
         return AssistEvent_Stopped();
       default:
@@ -17165,9 +17010,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
     // Codec=Dco (DartCObject based), see doc to use other codecs
     switch (raw[0]) {
       case 0:
-        return BoardLane_Status(
-          status: dco_decode_String(raw[1]),
-        );
+        return BoardLane_Status(status: dco_decode_String(raw[1]));
       case 1:
         return BoardLane_Todo();
       case 2:
@@ -17739,9 +17582,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
     // Codec=Dco (DartCObject based), see doc to use other codecs
     switch (raw[0]) {
       case 0:
-        return CardKey_Note(
-          id: dco_decode_String(raw[1]),
-        );
+        return CardKey_Note(id: dco_decode_String(raw[1]));
       case 1:
         return CardKey_Task(
           noteId: dco_decode_String(raw[1]),
@@ -17806,9 +17647,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
           end: dco_decode_u_32(raw[2]),
         );
       case 1:
-        return CommentPlacement_Orphaned(
-          at: dco_decode_u_32(raw[1]),
-        );
+        return CommentPlacement_Orphaned(at: dco_decode_u_32(raw[1]));
       default:
         throw Exception("unreachable");
     }
@@ -18048,17 +17887,11 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
     // Codec=Dco (DartCObject based), see doc to use other codecs
     switch (raw[0]) {
       case 0:
-        return EditCommand_Enter(
-          plain: dco_decode_bool(raw[1]),
-        );
+        return EditCommand_Enter(plain: dco_decode_bool(raw[1]));
       case 1:
-        return EditCommand_Tab(
-          out: dco_decode_bool(raw[1]),
-        );
+        return EditCommand_Tab(out: dco_decode_bool(raw[1]));
       case 2:
-        return EditCommand_Format(
-          format: dco_decode_format_kind(raw[1]),
-        );
+        return EditCommand_Format(format: dco_decode_format_kind(raw[1]));
       case 3:
         return EditCommand_CycleHeading();
       case 4:
@@ -18112,9 +17945,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
           atMs: dco_decode_CastedPrimitive_i_64(raw[2]),
         );
       case 1:
-        return EditorEvent_Incoming(
-          deleted: dco_decode_bool(raw[1]),
-        );
+        return EditorEvent_Incoming(deleted: dco_decode_bool(raw[1]));
       case 2:
         return EditorEvent_Reloaded(
           snapshot: dco_decode_box_autoadd_editor_snapshot(raw[1]),
@@ -18122,9 +17953,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
       case 3:
         return EditorEvent_Closed();
       case 4:
-        return EditorEvent_Failed(
-          message: dco_decode_String(raw[1]),
-        );
+        return EditorEvent_Failed(message: dco_decode_String(raw[1]));
       default:
         throw Exception("unreachable");
     }
@@ -18268,9 +18097,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
       case 1:
         return GoalSetting_Off();
       case 2:
-        return GoalSetting_Words(
-          dco_decode_u_32(raw[1]),
-        );
+        return GoalSetting_Words(dco_decode_u_32(raw[1]));
       default:
         throw Exception("unreachable");
     }
@@ -18295,13 +18122,9 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
       case 0:
         return GraphFilter_All();
       case 1:
-        return GraphFilter_Book(
-          id: dco_decode_String(raw[1]),
-        );
+        return GraphFilter_Book(id: dco_decode_String(raw[1]));
       case 2:
-        return GraphFilter_Tag(
-          id: dco_decode_String(raw[1]),
-        );
+        return GraphFilter_Tag(id: dco_decode_String(raw[1]));
       default:
         throw Exception("unreachable");
     }
@@ -18460,13 +18283,9 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
           dco_decode_box_autoadd_import_progress(raw[1]),
         );
       case 1:
-        return ImportEvent_Done(
-          dco_decode_box_autoadd_import_summary(raw[1]),
-        );
+        return ImportEvent_Done(dco_decode_box_autoadd_import_summary(raw[1]));
       case 2:
-        return ImportEvent_Failed(
-          dco_decode_String(raw[1]),
-        );
+        return ImportEvent_Failed(dco_decode_String(raw[1]));
       default:
         throw Exception("unreachable");
     }
@@ -18594,31 +18413,19 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
       case 1:
         return KansoError_Locked();
       case 2:
-        return KansoError_Conflict(
-          currentRev: dco_decode_String(raw[1]),
-        );
+        return KansoError_Conflict(currentRev: dco_decode_String(raw[1]));
       case 3:
-        return KansoError_Invalid(
-          message: dco_decode_String(raw[1]),
-        );
+        return KansoError_Invalid(message: dco_decode_String(raw[1]));
       case 4:
-        return KansoError_Storage(
-          message: dco_decode_String(raw[1]),
-        );
+        return KansoError_Storage(message: dco_decode_String(raw[1]));
       case 5:
-        return KansoError_Network(
-          message: dco_decode_String(raw[1]),
-        );
+        return KansoError_Network(message: dco_decode_String(raw[1]));
       case 6:
         return KansoError_SignedOut();
       case 7:
-        return KansoError_Auth(
-          message: dco_decode_String(raw[1]),
-        );
+        return KansoError_Auth(message: dco_decode_String(raw[1]));
       case 8:
-        return KansoError_Internal(
-          message: dco_decode_String(raw[1]),
-        );
+        return KansoError_Internal(message: dco_decode_String(raw[1]));
       default:
         throw Exception("unreachable");
     }
@@ -18658,17 +18465,11 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
     // Codec=Dco (DartCObject based), see doc to use other codecs
     switch (raw[0]) {
       case 0:
-        return LinkTarget_Note(
-          id: dco_decode_String(raw[1]),
-        );
+        return LinkTarget_Note(id: dco_decode_String(raw[1]));
       case 1:
-        return LinkTarget_NewNote(
-          title: dco_decode_String(raw[1]),
-        );
+        return LinkTarget_NewNote(title: dco_decode_String(raw[1]));
       case 2:
-        return LinkTarget_Web(
-          url: dco_decode_String(raw[1]),
-        );
+        return LinkTarget_Web(url: dco_decode_String(raw[1]));
       default:
         throw Exception("unreachable");
     }
@@ -19037,21 +18838,13 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
       case 2:
         return ListPlace_Recent();
       case 3:
-        return ListPlace_Notebook(
-          id: dco_decode_String(raw[1]),
-        );
+        return ListPlace_Notebook(id: dco_decode_String(raw[1]));
       case 4:
-        return ListPlace_Tag(
-          id: dco_decode_String(raw[1]),
-        );
+        return ListPlace_Tag(id: dco_decode_String(raw[1]));
       case 5:
-        return ListPlace_Status(
-          status: dco_decode_String(raw[1]),
-        );
+        return ListPlace_Status(status: dco_decode_String(raw[1]));
       case 6:
-        return ListPlace_TagPath(
-          path: dco_decode_String(raw[1]),
-        );
+        return ListPlace_TagPath(path: dco_decode_String(raw[1]));
       case 7:
         return ListPlace_Trash();
       default:
@@ -19608,9 +19401,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
       case 0:
         return LockEvent_Unlocked();
       case 1:
-        return LockEvent_Locked(
-          reason: dco_decode_lock_reason(raw[1]),
-        );
+        return LockEvent_Locked(reason: dco_decode_lock_reason(raw[1]));
       default:
         throw Exception("unreachable");
     }
@@ -19631,9 +19422,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
       case 1:
         return LockState_Open();
       case 2:
-        return LockState_Closed(
-          reason: dco_decode_opt_String(raw[1]),
-        );
+        return LockState_Closed(reason: dco_decode_opt_String(raw[1]));
       default:
         throw Exception("unreachable");
     }
@@ -19722,9 +19511,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
       case 1:
         return MeaningResult_NoModel();
       case 2:
-        return MeaningResult_Found(
-          rows: dco_decode_list_related_row(raw[1]),
-        );
+        return MeaningResult_Found(rows: dco_decode_list_related_row(raw[1]));
       default:
         throw Exception("unreachable");
     }
@@ -19800,23 +19587,15 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
       case 0:
         return NoteChange_TogglePin();
       case 1:
-        return NoteChange_Move(
-          notebookId: dco_decode_String(raw[1]),
-        );
+        return NoteChange_Move(notebookId: dco_decode_String(raw[1]));
       case 2:
         return NoteChange_Trash();
       case 3:
-        return NoteChange_SetStatus(
-          status: dco_decode_String(raw[1]),
-        );
+        return NoteChange_SetStatus(status: dco_decode_String(raw[1]));
       case 4:
-        return NoteChange_AddTag(
-          tagId: dco_decode_String(raw[1]),
-        );
+        return NoteChange_AddTag(tagId: dco_decode_String(raw[1]));
       case 5:
-        return NoteChange_RemoveTag(
-          tagId: dco_decode_String(raw[1]),
-        );
+        return NoteChange_RemoveTag(tagId: dco_decode_String(raw[1]));
       case 6:
         return NoteChange_Restore();
       case 7:
@@ -20369,13 +20148,9 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
       case 3:
         return PalettePlace_Tasks();
       case 4:
-        return PalettePlace_Notebook(
-          id: dco_decode_String(raw[1]),
-        );
+        return PalettePlace_Notebook(id: dco_decode_String(raw[1]));
       case 5:
-        return PalettePlace_Status(
-          name: dco_decode_String(raw[1]),
-        );
+        return PalettePlace_Status(name: dco_decode_String(raw[1]));
       case 6:
         return PalettePlace_Shared();
       case 7:
@@ -20411,9 +20186,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
           place: dco_decode_box_autoadd_palette_place(raw[1]),
         );
       case 2:
-        return PaletteTarget_Note(
-          id: dco_decode_String(raw[1]),
-        );
+        return PaletteTarget_Note(id: dco_decode_String(raw[1]));
       case 3:
         return PaletteTarget_Heading(
           noteId: dco_decode_String(raw[1]),
@@ -20469,9 +20242,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
     // Codec=Dco (DartCObject based), see doc to use other codecs
     switch (raw[0]) {
       case 0:
-        return PersonLookup_Found(
-          dco_decode_box_autoadd_person_row(raw[1]),
-        );
+        return PersonLookup_Found(dco_decode_box_autoadd_person_row(raw[1]));
       case 1:
         return PersonLookup_Changed(
           pinned: dco_decode_opt_box_autoadd_person_row(raw[1]),
@@ -20598,9 +20369,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
           message: dco_decode_String(raw[2]),
         );
       case 12:
-        return PreviewBlock_Html(
-          text: dco_decode_String(raw[1]),
-        );
+        return PreviewBlock_Html(text: dco_decode_String(raw[1]));
       default:
         throw Exception("unreachable");
     }
@@ -20612,9 +20381,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
     final arr = raw as List<dynamic>;
     if (arr.length != 1)
       throw Exception('unexpected arr length: expect 1 but see ${arr.length}');
-    return PreviewCell(
-      inlines: dco_decode_list_preview_inline(arr[0]),
-    );
+    return PreviewCell(inlines: dco_decode_list_preview_inline(arr[0]));
   }
 
   @protected
@@ -20673,9 +20440,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
           width: dco_decode_opt_box_autoadd_u_32(raw[4]),
         );
       case 5:
-        return PreviewInline_Missing(
-          text: dco_decode_String(raw[1]),
-        );
+        return PreviewInline_Missing(text: dco_decode_String(raw[1]));
       case 6:
         return PreviewInline_Break();
       default:
@@ -20694,21 +20459,13 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
           anchor: dco_decode_opt_String(raw[3]),
         );
       case 1:
-        return PreviewLink_NewNote(
-          title: dco_decode_String(raw[1]),
-        );
+        return PreviewLink_NewNote(title: dco_decode_String(raw[1]));
       case 2:
-        return PreviewLink_Tag(
-          name: dco_decode_String(raw[1]),
-        );
+        return PreviewLink_Tag(name: dco_decode_String(raw[1]));
       case 3:
-        return PreviewLink_Heading(
-          id: dco_decode_String(raw[1]),
-        );
+        return PreviewLink_Heading(id: dco_decode_String(raw[1]));
       case 4:
-        return PreviewLink_Web(
-          url: dco_decode_String(raw[1]),
-        );
+        return PreviewLink_Web(url: dco_decode_String(raw[1]));
       case 5:
         return PreviewLink_Attachment(
           id: dco_decode_String(raw[1]),
@@ -20717,13 +20474,9 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
           size: dco_decode_CastedPrimitive_u_64(raw[4]),
         );
       case 6:
-        return PreviewLink_Task(
-          index: dco_decode_u_32(raw[1]),
-        );
+        return PreviewLink_Task(index: dco_decode_u_32(raw[1]));
       case 7:
-        return PreviewLink_CopyCode(
-          index: dco_decode_u_32(raw[1]),
-        );
+        return PreviewLink_CopyCode(index: dco_decode_u_32(raw[1]));
       case 8:
         return PreviewLink_Due();
       case 9:
@@ -20779,9 +20532,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
     final arr = raw as List<dynamic>;
     if (arr.length != 1)
       throw Exception('unexpected arr length: expect 1 but see ${arr.length}');
-    return PreviewRow(
-      cells: dco_decode_list_preview_cell(arr[0]),
-    );
+    return PreviewRow(cells: dco_decode_list_preview_cell(arr[0]));
   }
 
   @protected
@@ -20875,9 +20626,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
           dco_decode_box_autoadd_account_state(raw[1]),
         );
       case 5:
-        return ProviderEvent_Failed(
-          message: dco_decode_String(raw[1]),
-        );
+        return ProviderEvent_Failed(message: dco_decode_String(raw[1]));
       case 6:
         return ProviderEvent_Cancelled();
       default:
@@ -20996,10 +20745,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
     if (arr.length != 2) {
       throw Exception('Expected 2 elements, got ${arr.length}');
     }
-    return (
-      dco_decode_String(arr[0]),
-      dco_decode_share_role(arr[1]),
-    );
+    return (dco_decode_String(arr[0]), dco_decode_share_role(arr[1]));
   }
 
   @protected
@@ -21008,9 +20754,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
     final arr = raw as List<dynamic>;
     if (arr.length != 1)
       throw Exception('unexpected arr length: expect 1 but see ${arr.length}');
-    return RecoveryKeyText(
-      key: dco_decode_String(arr[0]),
-    );
+    return RecoveryKeyText(key: dco_decode_String(arr[0]));
   }
 
   @protected
@@ -21059,13 +20803,9 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
           total: dco_decode_u_32(raw[2]),
         );
       case 4:
-        return RelatedStatus_Ready(
-          notes: dco_decode_u_32(raw[1]),
-        );
+        return RelatedStatus_Ready(notes: dco_decode_u_32(raw[1]));
       case 5:
-        return RelatedStatus_Failed(
-          message: dco_decode_String(raw[1]),
-        );
+        return RelatedStatus_Failed(message: dco_decode_String(raw[1]));
       default:
         throw Exception("unreachable");
     }
@@ -21338,13 +21078,9 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
       case 1:
         return SaveState_Pending();
       case 2:
-        return SaveState_Conflict(
-          deleted: dco_decode_bool(raw[1]),
-        );
+        return SaveState_Conflict(deleted: dco_decode_bool(raw[1]));
       case 3:
-        return SaveState_Failed(
-          message: dco_decode_String(raw[1]),
-        );
+        return SaveState_Failed(message: dco_decode_String(raw[1]));
       default:
         throw Exception("unreachable");
     }
@@ -21356,10 +21092,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
     final arr = raw as List<dynamic>;
     if (arr.length != 2)
       throw Exception('unexpected arr length: expect 2 but see ${arr.length}');
-    return Saved(
-      id: dco_decode_String(arr[0]),
-      rev: dco_decode_String(arr[1]),
-    );
+    return Saved(id: dco_decode_String(arr[0]), rev: dco_decode_String(arr[1]));
   }
 
   @protected
@@ -21373,9 +21106,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
       case 2:
         return SearchScope_Tags();
       case 3:
-        return SearchScope_Notebook(
-          id: dco_decode_String(raw[1]),
-        );
+        return SearchScope_Notebook(id: dco_decode_String(raw[1]));
       default:
         throw Exception("unreachable");
     }
@@ -21387,9 +21118,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
     final arr = raw as List<dynamic>;
     if (arr.length != 1)
       throw Exception('unexpected arr length: expect 1 but see ${arr.length}');
-    return ServerInfo(
-      signupsOpen: dco_decode_bool(arr[0]),
-    );
+    return ServerInfo(signupsOpen: dco_decode_bool(arr[0]));
   }
 
   @protected
@@ -21625,9 +21354,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
       case 3:
         return SyncAccount_SessionEnded();
       case 4:
-        return SyncAccount_Busy(
-          dco_decode_account_step(raw[1]),
-        );
+        return SyncAccount_Busy(dco_decode_account_step(raw[1]));
       default:
         throw Exception("unreachable");
     }
@@ -21814,9 +21541,7 @@ class KansoCoreApiImpl extends KansoCoreApiImplPlatform
     final arr = raw as List<dynamic>;
     if (arr.length != 1)
       throw Exception('unexpected arr length: expect 1 but see ${arr.length}');
-    return TaskBoard(
-      groups: dco_decode_list_task_section(arr[0]),
-    );
+    return TaskBoard(groups: dco_decode_list_task_section(arr[0]));
   }
 
   @protected
@@ -36526,20 +36251,14 @@ class KansoAccountImpl extends RustOpaque implements KansoAccount {
       .api
       .crateApiAccountKansoAccountAnswerBinding(that: this, answer: answer);
 
-  Future<void> cancelApproval() =>
-      KansoCore.instance.api.crateApiAccountKansoAccountCancelApproval(
-        that: this,
-      );
+  Future<void> cancelApproval() => KansoCore.instance.api
+      .crateApiAccountKansoAccountCancelApproval(that: this);
 
-  Future<AccountState> cancelLocked() =>
-      KansoCore.instance.api.crateApiAccountKansoAccountCancelLocked(
-        that: this,
-      );
+  Future<AccountState> cancelLocked() => KansoCore.instance.api
+      .crateApiAccountKansoAccountCancelLocked(that: this);
 
-  Future<void> cancelProvider() =>
-      KansoCore.instance.api.crateApiAccountKansoAccountCancelProvider(
-        that: this,
-      );
+  Future<void> cancelProvider() => KansoCore.instance.api
+      .crateApiAccountKansoAccountCancelProvider(that: this);
 
   Future<SignedUp> finishProviderSignUp({required String username}) =>
       KansoCore.instance.api.crateApiAccountKansoAccountFinishProviderSignUp(
@@ -36558,10 +36277,8 @@ class KansoAccountImpl extends RustOpaque implements KansoAccount {
 
   /// The passkey sheets the phone is asked to show, until Dart stops
   /// listening.
-  Stream<PasskeyRequest> passkeyRequests() =>
-      KansoCore.instance.api.crateApiAccountKansoAccountPasskeyRequests(
-        that: this,
-      );
+  Stream<PasskeyRequest> passkeyRequests() => KansoCore.instance.api
+      .crateApiAccountKansoAccountPasskeyRequests(that: this);
 
   Future<AccountState> passkeySignIn({
     required String server,
@@ -36583,10 +36300,8 @@ class KansoAccountImpl extends RustOpaque implements KansoAccount {
     deviceName: deviceName,
   );
 
-  Future<RecoveryKeyText?> pendingRecoveryKey() =>
-      KansoCore.instance.api.crateApiAccountKansoAccountPendingRecoveryKey(
-        that: this,
-      );
+  Future<RecoveryKeyText?> pendingRecoveryKey() => KansoCore.instance.api
+      .crateApiAccountKansoAccountPendingRecoveryKey(that: this);
 
   Future<void> providerPageEnded({String? callbackUrl}) =>
       KansoCore.instance.api.crateApiAccountKansoAccountProviderPageEnded(
@@ -36609,10 +36324,8 @@ class KansoAccountImpl extends RustOpaque implements KansoAccount {
     deviceName: deviceName,
   );
 
-  Future<void> recoveryKeySaved() =>
-      KansoCore.instance.api.crateApiAccountKansoAccountRecoveryKeySaved(
-        that: this,
-      );
+  Future<void> recoveryKeySaved() => KansoCore.instance.api
+      .crateApiAccountKansoAccountRecoveryKeySaved(that: this);
 
   /// The wait for another device to approve this one, until it ends or Dart
   /// stops listening.
@@ -36666,15 +36379,11 @@ class KansoAccountImpl extends RustOpaque implements KansoAccount {
   );
 
   Future<AccountState> state() =>
-      KansoCore.instance.api.crateApiAccountKansoAccountState(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiAccountKansoAccountState(that: this);
 
   /// The state now and each time it changes, until Dart stops listening.
   Stream<AccountState> stateStream() =>
-      KansoCore.instance.api.crateApiAccountKansoAccountStateStream(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiAccountKansoAccountStateStream(that: this);
 
   Future<AccountState> unlockWithPassword({required String password}) =>
       KansoCore.instance.api.crateApiAccountKansoAccountUnlockWithPassword(
@@ -36738,10 +36447,8 @@ class KansoAccountSettingsImpl extends RustOpaque
         typedUsername: typedUsername,
       );
 
-  Future<AccountDetails> details() =>
-      KansoCore.instance.api.crateApiAccountSettingsKansoAccountSettingsDetails(
-        that: this,
-      );
+  Future<AccountDetails> details() => KansoCore.instance.api
+      .crateApiAccountSettingsKansoAccountSettingsDetails(that: this);
 
   /// The steps of linking a provider, until it ends or Dart stops
   /// listening.
@@ -36785,10 +36492,8 @@ class KansoAccountSettingsImpl extends RustOpaque
         deviceId: deviceId,
       );
 
-  Future<void> signOut() =>
-      KansoCore.instance.api.crateApiAccountSettingsKansoAccountSettingsSignOut(
-        that: this,
-      );
+  Future<void> signOut() => KansoCore.instance.api
+      .crateApiAccountSettingsKansoAccountSettingsSignOut(that: this);
 
   Future<AccountDetails> unlinkProvider({
     required ProviderKind provider,
@@ -36820,9 +36525,8 @@ class KansoAiImpl extends RustOpaque implements KansoAi {
         KansoCore.instance.api.rust_arc_decrement_strong_count_KansoAiPtr,
   );
 
-  List<AiAction> actions() => KansoCore.instance.api.crateApiAiKansoAiActions(
-    that: this,
-  );
+  List<AiAction> actions() =>
+      KansoCore.instance.api.crateApiAiKansoAiActions(that: this);
 
   /// The suggestion's events, until it ends or Dart stops listening. A
   /// request that can't start (AI off, a note kept out) is one `Failed`
@@ -36843,9 +36547,7 @@ class KansoAiImpl extends RustOpaque implements KansoAi {
   );
 
   KansoAskConversation conversation() =>
-      KansoCore.instance.api.crateApiAiKansoAiConversation(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiAiKansoAiConversation(that: this);
 
   /// Reads the recent notes with the model for open loops the rules
   /// missed. Blocks until it is done, on a worker thread; `run` (from
@@ -36856,9 +36558,8 @@ class KansoAiImpl extends RustOpaque implements KansoAi {
       .crateApiAiKansoAiFindOpenLoops(that: this, run: run);
 
   /// A request to stop, for one `assist` or `summarize`.
-  KansoAiRun newRun() => KansoCore.instance.api.crateApiAiKansoAiNewRun(
-    that: this,
-  );
+  KansoAiRun newRun() =>
+      KansoCore.instance.api.crateApiAiKansoAiNewRun(that: this);
 
   Future<bool> noteAllowed({required String id}) =>
       KansoCore.instance.api.crateApiAiKansoAiNoteAllowed(that: this, id: id);
@@ -36869,9 +36570,7 @@ class KansoAiImpl extends RustOpaque implements KansoAi {
       .crateApiAiKansoAiPrivacyLine(that: this, device: device);
 
   List<AiProviderInfo> providers() =>
-      KansoCore.instance.api.crateApiAiKansoAiProviders(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiAiKansoAiProviders(that: this);
 
   /// Saves the key in the phone's secret store; empty removes it.
   Future<void> setKey({required String provider, required String key}) =>
@@ -36888,9 +36587,7 @@ class KansoAiImpl extends RustOpaque implements KansoAi {
       );
 
   Future<AiSettingsView> settings() =>
-      KansoCore.instance.api.crateApiAiKansoAiSettings(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiAiKansoAiSettings(that: this);
 
   /// A short paragraph over today's brief.
   Future<AiSummary> summariseBrief({required KansoAiRun run}) => KansoCore
@@ -36916,9 +36613,8 @@ class KansoAiImpl extends RustOpaque implements KansoAi {
     run: run,
   );
 
-  Future<String> test() => KansoCore.instance.api.crateApiAiKansoAiTest(
-    that: this,
-  );
+  Future<String> test() =>
+      KansoCore.instance.api.crateApiAiKansoAiTest(that: this);
 }
 
 @sealed
@@ -36940,9 +36636,7 @@ class KansoAiRunImpl extends RustOpaque implements KansoAiRun {
         KansoCore.instance.api.rust_arc_decrement_strong_count_KansoAiRunPtr,
   );
 
-  void stop() => KansoCore.instance.api.crateApiAiKansoAiRunStop(
-    that: this,
-  );
+  void stop() => KansoCore.instance.api.crateApiAiKansoAiRunStop(that: this);
 }
 
 @sealed
@@ -36977,16 +36671,12 @@ class KansoApprovalsImpl extends RustOpaque implements KansoApprovals {
       .crateApiApprovalsKansoApprovalsDecline(that: this, id: id);
 
   Future<List<ApprovalPrompt>> refresh() =>
-      KansoCore.instance.api.crateApiApprovalsKansoApprovalsRefresh(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiApprovalsKansoApprovalsRefresh(that: this);
 
   /// The requests waiting now and each time they change, until Dart stops
   /// listening.
   Stream<List<ApprovalPrompt>> watch() =>
-      KansoCore.instance.api.crateApiApprovalsKansoApprovalsWatch(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiApprovalsKansoApprovalsWatch(that: this);
 }
 
 @sealed
@@ -37022,18 +36712,14 @@ class KansoAskConversationImpl extends RustOpaque
   Stream<AskEvent> ask({required String question}) => KansoCore.instance.api
       .crateApiAiKansoAskConversationAsk(that: this, question: question);
 
-  void clear() => KansoCore.instance.api.crateApiAiKansoAskConversationClear(
-    that: this,
-  );
+  void clear() =>
+      KansoCore.instance.api.crateApiAiKansoAskConversationClear(that: this);
 
-  void stop() => KansoCore.instance.api.crateApiAiKansoAskConversationStop(
-    that: this,
-  );
+  void stop() =>
+      KansoCore.instance.api.crateApiAiKansoAskConversationStop(that: this);
 
-  int turnCount() =>
-      KansoCore.instance.api.crateApiAiKansoAskConversationTurnCount(
-        that: this,
-      );
+  int turnCount() => KansoCore.instance.api
+      .crateApiAiKansoAskConversationTurnCount(that: this);
 }
 
 @sealed
@@ -37080,9 +36766,7 @@ class KansoDiscoveryImpl extends RustOpaque implements KansoDiscovery {
   /// Loads the downloaded model and embeds sample notes, to say what it
   /// costs on this phone.
   Future<DiscoveryMeasure> measure() =>
-      KansoCore.instance.api.crateApiDiscoveryKansoDiscoveryMeasure(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiDiscoveryKansoDiscoveryMeasure(that: this);
 
   Future<NoteView> mergeNotes({
     required String keepId,
@@ -37094,10 +36778,8 @@ class KansoDiscoveryImpl extends RustOpaque implements KansoDiscovery {
   );
 
   /// Where the model's files are kept.
-  String modelDir() =>
-      KansoCore.instance.api.crateApiDiscoveryKansoDiscoveryModelDir(
-        that: this,
-      );
+  String modelDir() => KansoCore.instance.api
+      .crateApiDiscoveryKansoDiscoveryModelDir(that: this);
 
   Future<NoteMeaning> noteMeaning({required String id}) => KansoCore
       .instance
@@ -37118,14 +36800,10 @@ class KansoDiscoveryImpl extends RustOpaque implements KansoDiscovery {
   );
 
   Future<ImageToRead?> ocrNext() =>
-      KansoCore.instance.api.crateApiDiscoveryKansoDiscoveryOcrNext(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiDiscoveryKansoDiscoveryOcrNext(that: this);
 
-  Future<int> ocrWaiting() =>
-      KansoCore.instance.api.crateApiDiscoveryKansoDiscoveryOcrWaiting(
-        that: this,
-      );
+  Future<int> ocrWaiting() => KansoCore.instance.api
+      .crateApiDiscoveryKansoDiscoveryOcrWaiting(that: this);
 
   /// For a daily note, notes written on its date in earlier years.
   Future<List<OnThisDayRow>> onThisDay({
@@ -37138,10 +36816,8 @@ class KansoDiscoveryImpl extends RustOpaque implements KansoDiscovery {
   );
 
   /// Whether related notes are on.
-  Future<bool> relatedEnabled() =>
-      KansoCore.instance.api.crateApiDiscoveryKansoDiscoveryRelatedEnabled(
-        that: this,
-      );
+  Future<bool> relatedEnabled() => KansoCore.instance.api
+      .crateApiDiscoveryKansoDiscoveryRelatedEnabled(that: this);
 
   Future<List<RelatedRow>> relatedNotes({
     required String id,
@@ -37152,17 +36828,13 @@ class KansoDiscoveryImpl extends RustOpaque implements KansoDiscovery {
     limit: limit,
   );
 
-  Future<RelatedState> relatedState() =>
-      KansoCore.instance.api.crateApiDiscoveryKansoDiscoveryRelatedState(
-        that: this,
-      );
+  Future<RelatedState> relatedState() => KansoCore.instance.api
+      .crateApiDiscoveryKansoDiscoveryRelatedState(that: this);
 
   /// Where related notes stand now and each time that changes, until Dart
   /// stops listening.
-  Stream<RelatedState> relatedStream() =>
-      KansoCore.instance.api.crateApiDiscoveryKansoDiscoveryRelatedStream(
-        that: this,
-      );
+  Stream<RelatedState> relatedStream() => KansoCore.instance.api
+      .crateApiDiscoveryKansoDiscoveryRelatedStream(that: this);
 
   /// Up to three past notes about the paragraph around `caret` (a UTF-16
   /// offset in `body`) of note `id`, from the text as it is typed.
@@ -37230,9 +36902,7 @@ class KansoEditorImpl extends RustOpaque implements KansoEditor {
 
   /// Saves and ends the session.
   Future<SaveState> close() =>
-      KansoCore.instance.api.crateApiEditorKansoEditorClose(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiEditorKansoEditorClose(that: this);
 
   /// A change the editor decides on; none when there is nothing to do.
   EditOutcome? command({required EditCommand command}) => KansoCore.instance.api
@@ -37240,9 +36910,7 @@ class KansoEditorImpl extends RustOpaque implements KansoEditor {
 
   /// The words the note's open comments are on, to tint.
   Future<List<Range16>> commentMarks() =>
-      KansoCore.instance.api.crateApiEditorKansoEditorCommentMarks(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiEditorKansoEditorCommentMarks(that: this);
 
   /// Comments on the selected words of a shared note; the new comment's ID.
   Future<String> commentOnSelection({required String body}) => KansoCore
@@ -37252,39 +36920,27 @@ class KansoEditorImpl extends RustOpaque implements KansoEditor {
 
   /// What the caret completes, if anything.
   Future<Completion?> completion() =>
-      KansoCore.instance.api.crateApiEditorKansoEditorCompletion(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiEditorKansoEditorCompletion(that: this);
 
   /// The library default, regardless of this note's own choice.
-  Future<int?> defaultWordGoal() =>
-      KansoCore.instance.api.crateApiEditorKansoEditorDefaultWordGoal(
-        that: this,
-      );
+  Future<int?> defaultWordGoal() => KansoCore.instance.api
+      .crateApiEditorKansoEditorDefaultWordGoal(that: this);
 
   /// The goal that applies to this note, after its own choice and the library default.
-  Future<int?> effectiveWordGoal() =>
-      KansoCore.instance.api.crateApiEditorKansoEditorEffectiveWordGoal(
-        that: this,
-      );
+  Future<int?> effectiveWordGoal() => KansoCore.instance.api
+      .crateApiEditorKansoEditorEffectiveWordGoal(that: this);
 
   /// What happens to the note that Dart didn't ask for, until Dart stops
   /// listening.
   Stream<EditorEvent> events() =>
-      KansoCore.instance.api.crateApiEditorKansoEditorEvents(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiEditorKansoEditorEvents(that: this);
 
   /// Saves now.
   Future<SaveState> flush() =>
-      KansoCore.instance.api.crateApiEditorKansoEditorFlush(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiEditorKansoEditorFlush(that: this);
 
   Future<SaveState> keepMine() =>
-      KansoCore.instance.api.crateApiEditorKansoEditorKeepMine(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiEditorKansoEditorKeepMine(that: this);
 
   /// Where the link at an offset of the text leads.
   Future<LinkTarget?> linkAt({required int offset}) => KansoCore.instance.api
@@ -37307,15 +36963,12 @@ class KansoEditorImpl extends RustOpaque implements KansoEditor {
         end: end,
       );
 
-  EditOutcome? redo() => KansoCore.instance.api.crateApiEditorKansoEditorRedo(
-    that: this,
-  );
+  EditOutcome? redo() =>
+      KansoCore.instance.api.crateApiEditorKansoEditorRedo(that: this);
 
   /// Other people's carets and selections, in units of the text.
   Future<List<CursorMark>> remoteCursors() =>
-      KansoCore.instance.api.crateApiEditorKansoEditorRemoteCursors(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiEditorKansoEditorRemoteCursors(that: this);
 
   Future<List<Property>> removeProperty({required int index}) => KansoCore
       .instance
@@ -37358,9 +37011,7 @@ class KansoEditorImpl extends RustOpaque implements KansoEditor {
 
   /// The note as it is now.
   Future<EditorSnapshot> snapshot() =>
-      KansoCore.instance.api.crateApiEditorKansoEditorSnapshot(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiEditorKansoEditorSnapshot(that: this);
 
   /// The colors of `start..end` of the text in a built-in theme.
   Future<RunBatch> styledRuns({
@@ -37374,14 +37025,11 @@ class KansoEditorImpl extends RustOpaque implements KansoEditor {
     themeId: themeId,
   );
 
-  EditOutcome? undo() => KansoCore.instance.api.crateApiEditorKansoEditorUndo(
-    that: this,
-  );
+  EditOutcome? undo() =>
+      KansoCore.instance.api.crateApiEditorKansoEditorUndo(that: this);
 
   Future<EditorSnapshot> useTheirs() =>
-      KansoCore.instance.api.crateApiEditorKansoEditorUseTheirs(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiEditorKansoEditorUseTheirs(that: this);
 }
 
 @sealed
@@ -37418,10 +37066,8 @@ class KansoGalleryImpl extends RustOpaque implements KansoGallery {
       .api
       .crateApiGalleryKansoGalleryInstalledThemeTokens(that: this, id: id);
 
-  Future<List<BuiltinTheme>> installedThemes() =>
-      KansoCore.instance.api.crateApiGalleryKansoGalleryInstalledThemes(
-        that: this,
-      );
+  Future<List<BuiltinTheme>> installedThemes() => KansoCore.instance.api
+      .crateApiGalleryKansoGalleryInstalledThemes(that: this);
 
   Future<List<GalleryItem>> uninstall({required String id}) => KansoCore
       .instance
@@ -37449,25 +37095,18 @@ class KansoLibraryImpl extends RustOpaque implements KansoLibrary {
   );
 
   KansoAccount account() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryAccount(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLibraryKansoLibraryAccount(that: this);
 
-  KansoAccountSettings accountSettings() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryAccountSettings(
-        that: this,
-      );
+  KansoAccountSettings accountSettings() => KansoCore.instance.api
+      .crateApiLibraryKansoLibraryAccountSettings(that: this);
 
   /// The AI features scoped to this library; provider keys stay in Rust's
   /// secret store and are never returned through this bridge.
-  KansoAi ai() => KansoCore.instance.api.crateApiLibraryKansoLibraryAi(
-    that: this,
-  );
+  KansoAi ai() =>
+      KansoCore.instance.api.crateApiLibraryKansoLibraryAi(that: this);
 
   KansoApprovals approvals() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryApprovals(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLibraryKansoLibraryApprovals(that: this);
 
   /// Keeps the proposals the person ticked; how many were added.
   Future<int> approveAiLoops({required List<LoopProposal> picks}) => KansoCore
@@ -37481,21 +37120,15 @@ class KansoLibraryImpl extends RustOpaque implements KansoLibrary {
       .crateApiLibraryKansoLibraryAttachment(that: this, id: id);
 
   Future<BackupFile> backUpNow() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryBackUpNow(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLibraryKansoLibraryBackUpNow(that: this);
 
   /// Makes the daily backup if one is due.
   Future<BackupFile?> backupIfDue() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryBackupIfDue(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLibraryKansoLibraryBackupIfDue(that: this);
 
   /// The backups, newest first.
   Future<List<BackupFile>> backups() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryBackups(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLibraryKansoLibraryBackups(that: this);
 
   Future<BoardView> board({
     required BoardKind kind,
@@ -37507,9 +37140,7 @@ class KansoLibraryImpl extends RustOpaque implements KansoLibrary {
   );
 
   Future<BriefView> brief() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryBrief(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLibraryKansoLibraryBrief(that: this);
 
   Future<List<PlannedNotice>> briefPlan({required bool canNotify}) => KansoCore
       .instance
@@ -37517,9 +37148,7 @@ class KansoLibraryImpl extends RustOpaque implements KansoLibrary {
       .crateApiLibraryKansoLibraryBriefPlan(that: this, canNotify: canNotify);
 
   Future<BriefPrefs> briefPrefs() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryBriefPrefs(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLibraryKansoLibraryBriefPrefs(that: this);
 
   /// Saves something shared from inside the app as a note in the Inbox.
   Future<CaptureOutcome> capture({required Share share}) => KansoCore
@@ -37538,9 +37167,7 @@ class KansoLibraryImpl extends RustOpaque implements KansoLibrary {
 
   /// The IDs of what changed, in batches, until Dart stops listening.
   Stream<List<String>> changes() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryChanges(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLibraryKansoLibraryChanges(that: this);
 
   Future<bool> closeLoop({
     required String noteId,
@@ -37580,16 +37207,12 @@ class KansoLibraryImpl extends RustOpaque implements KansoLibrary {
   Future<TagRow> createTag({required String name}) => KansoCore.instance.api
       .crateApiLibraryKansoLibraryCreateTag(that: this, name: name);
 
-  Future<String?> dailyTemplate() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryDailyTemplate(
-        that: this,
-      );
+  Future<String?> dailyTemplate() => KansoCore.instance.api
+      .crateApiLibraryKansoLibraryDailyTemplate(that: this);
 
   /// The default word goal for notes without their own choice.
-  Future<int?> defaultWordGoal() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryDefaultWordGoal(
-        that: this,
-      );
+  Future<int?> defaultWordGoal() => KansoCore.instance.api
+      .crateApiLibraryKansoLibraryDefaultWordGoal(that: this);
 
   /// Deletes a backup made with `back_up_now`; refuses any other.
   Future<void> deleteBackup({required String path}) => KansoCore.instance.api
@@ -37605,9 +37228,7 @@ class KansoLibraryImpl extends RustOpaque implements KansoLibrary {
       .crateApiLibraryKansoLibraryDeleteTag(that: this, id: id);
 
   KansoDiscovery discovery() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryDiscovery(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLibraryKansoLibraryDiscovery(that: this);
 
   /// Copies note `id` as the desktop does; returns the copy.
   Future<Saved> duplicate({required String id}) => KansoCore.instance.api
@@ -37619,14 +37240,10 @@ class KansoLibraryImpl extends RustOpaque implements KansoLibrary {
 
   /// Deletes every note in the trash for good; says how many.
   Future<int> emptyTrash() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryEmptyTrash(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLibraryKansoLibraryEmptyTrash(that: this);
 
   KansoGallery gallery() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryGallery(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLibraryKansoLibraryGallery(that: this);
 
   /// The note's saved versions, newest first, beside the note now.
   Future<NoteHistory> history({required String id}) => KansoCore.instance.api
@@ -37702,22 +37319,17 @@ class KansoLibraryImpl extends RustOpaque implements KansoLibrary {
       .crateApiLibraryKansoLibraryJournalToday(that: this, now: now);
 
   KansoLinking linking() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryLinking(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLibraryKansoLibraryLinking(that: this);
 
   Future<NoteList> list({required ListQuery query}) => KansoCore.instance.api
       .crateApiLibraryKansoLibraryList(that: this, query: query);
 
-  KansoLocks locks() => KansoCore.instance.api.crateApiLibraryKansoLibraryLocks(
-    that: this,
-  );
+  KansoLocks locks() =>
+      KansoCore.instance.api.crateApiLibraryKansoLibraryLocks(that: this);
 
   /// The anonymous usage count and its notice state for this library.
   KansoMetrics metrics() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryMetrics(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLibraryKansoLibraryMetrics(that: this);
 
   Future<CardMoved> moveCard({
     required CardKey card,
@@ -37742,9 +37354,7 @@ class KansoLibraryImpl extends RustOpaque implements KansoLibrary {
   );
 
   Future<MadeNote> newTemplate() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryNewTemplate(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLibraryKansoLibraryNewTemplate(that: this);
 
   Future<NoteView> note({required String id}) => KansoCore.instance.api
       .crateApiLibraryKansoLibraryNote(that: this, id: id);
@@ -37764,9 +37374,7 @@ class KansoLibraryImpl extends RustOpaque implements KansoLibrary {
       .crateApiLibraryKansoLibraryNoteWordGoal(that: this, id: id);
 
   Future<List<NotebookRow>> notebooks() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryNotebooks(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLibraryKansoLibraryNotebooks(that: this);
 
   /// Opens the Markdown or text files the system handed over, each into
   /// the Inbox; the last note opened and what went wrong with the others.
@@ -37782,20 +37390,14 @@ class KansoLibraryImpl extends RustOpaque implements KansoLibrary {
   );
 
   Future<OpenLoopsBoard> openLoops() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryOpenLoops(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLibraryKansoLibraryOpenLoops(that: this);
 
   /// How many open tasks are overdue (the Tasks place's badge).
-  Future<int> overdueTasks() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryOverdueTasks(
-        that: this,
-      );
+  Future<int> overdueTasks() => KansoCore.instance.api
+      .crateApiLibraryKansoLibraryOverdueTasks(that: this);
 
   Future<LibraryOverview> overview() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryOverview(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLibraryKansoLibraryOverview(that: this);
 
   Future<List<Property>> properties({required String id}) => KansoCore
       .instance
@@ -37804,9 +37406,7 @@ class KansoLibraryImpl extends RustOpaque implements KansoLibrary {
 
   /// Publishing uses the signed-in session held by this library.
   Future<KansoPublisher> publisher() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryPublisher(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLibraryKansoLibraryPublisher(that: this);
 
   Future<Table> queryView({required String source, String? selfId}) =>
       KansoCore.instance.api.crateApiLibraryKansoLibraryQueryView(
@@ -37869,9 +37469,7 @@ class KansoLibraryImpl extends RustOpaque implements KansoLibrary {
       );
 
   KansoRenderer renderer() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryRenderer(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLibraryKansoLibraryRenderer(that: this);
 
   Future<ReplaceOutcome> replaceApply({
     required ReplaceOptions options,
@@ -38022,14 +37620,10 @@ class KansoLibraryImpl extends RustOpaque implements KansoLibrary {
       );
 
   KansoShared shared() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryShared(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLibraryKansoLibraryShared(that: this);
 
   KansoSync syncing() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibrarySyncing(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLibraryKansoLibrarySyncing(that: this);
 
   /// The sidebar's tag chips and nested tag tree.
   Future<TagPlaces> tagPlaces({
@@ -38046,9 +37640,7 @@ class KansoLibraryImpl extends RustOpaque implements KansoLibrary {
   );
 
   Future<List<TagRow>> tags() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryTags(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLibraryKansoLibraryTags(that: this);
 
   /// The Tasks place: open tasks across the notes, in groups; locked
   /// notes are left out.
@@ -38058,14 +37650,10 @@ class KansoLibraryImpl extends RustOpaque implements KansoLibrary {
       .crateApiLibraryKansoLibraryTasks(that: this, query: query);
 
   Future<List<TemplateRow>> templates() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryTemplates(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLibraryKansoLibraryTemplates(that: this);
 
   KansoThemes themes() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryThemes(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLibraryKansoLibraryThemes(that: this);
 
   /// The ID of today's daily note at the phone's local time `now`, made
   /// if it isn't there.
@@ -38101,9 +37689,7 @@ class KansoLibraryImpl extends RustOpaque implements KansoLibrary {
       .crateApiLibraryKansoLibraryTrash(that: this, id: id);
 
   KansoTriage triage() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryTriage(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLibraryKansoLibraryTriage(that: this);
 
   Future<int> undo({required int ticket}) => KansoCore.instance.api
       .crateApiLibraryKansoLibraryUndo(that: this, ticket: ticket);
@@ -38121,16 +37707,12 @@ class KansoLibraryImpl extends RustOpaque implements KansoLibrary {
 
   /// Voice capture: voice notes into the Inbox, the recordings left outside
   /// the app, and tidying a voice note.
-  KansoVoiceCapture voiceCapture() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryVoiceCapture(
-        that: this,
-      );
+  KansoVoiceCapture voiceCapture() => KansoCore.instance.api
+      .crateApiLibraryKansoLibraryVoiceCapture(that: this);
 
   /// Voice dictation settings saved beside the library database.
-  Future<VoiceSettings> voiceSettings() =>
-      KansoCore.instance.api.crateApiLibraryKansoLibraryVoiceSettings(
-        that: this,
-      );
+  Future<VoiceSettings> voiceSettings() => KansoCore.instance.api
+      .crateApiLibraryKansoLibraryVoiceSettings(that: this);
 }
 
 @sealed
@@ -38225,20 +37807,14 @@ class KansoLocksImpl extends RustOpaque implements KansoLocks {
         KansoCore.instance.api.rust_arc_decrement_strong_count_KansoLocksPtr,
   );
 
-  Future<int> beginBiometricEnrollment() =>
-      KansoCore.instance.api.crateApiLocksKansoLocksBeginBiometricEnrollment(
-        that: this,
-      );
+  Future<int> beginBiometricEnrollment() => KansoCore.instance.api
+      .crateApiLocksKansoLocksBeginBiometricEnrollment(that: this);
 
-  Future<int?> beginBiometricUnlock() =>
-      KansoCore.instance.api.crateApiLocksKansoLocksBeginBiometricUnlock(
-        that: this,
-      );
+  Future<int?> beginBiometricUnlock() => KansoCore.instance.api
+      .crateApiLocksKansoLocksBeginBiometricUnlock(that: this);
 
   Future<bool> biometricsOn() =>
-      KansoCore.instance.api.crateApiLocksKansoLocksBiometricsOn(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLocksKansoLocksBiometricsOn(that: this);
 
   Future<int> changePassword({required String old, required String new_}) =>
       KansoCore.instance.api.crateApiLocksKansoLocksChangePassword(
@@ -38251,30 +37827,21 @@ class KansoLocksImpl extends RustOpaque implements KansoLocks {
       .crateApiLocksKansoLocksIsNoteUnlocked(that: this, id: id);
 
   Future<bool> isUnlocked() =>
-      KansoCore.instance.api.crateApiLocksKansoLocksIsUnlocked(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLocksKansoLocksIsUnlocked(that: this);
 
   /// The library's ID, which names the platform's biometric key or item.
   Future<String> libraryId() =>
-      KansoCore.instance.api.crateApiLocksKansoLocksLibraryId(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLocksKansoLocksLibraryId(that: this);
 
-  Future<void> lock() => KansoCore.instance.api.crateApiLocksKansoLocksLock(
-    that: this,
-  );
+  Future<void> lock() =>
+      KansoCore.instance.api.crateApiLocksKansoLocksLock(that: this);
 
   /// Each time the notes open or close, until Dart stops listening.
   Stream<LockEvent> lockEvents() =>
-      KansoCore.instance.api.crateApiLocksKansoLocksLockEvents(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLocksKansoLocksLockEvents(that: this);
 
-  Future<void> lockForBackground() =>
-      KansoCore.instance.api.crateApiLocksKansoLocksLockForBackground(
-        that: this,
-      );
+  Future<void> lockForBackground() => KansoCore.instance.api
+      .crateApiLocksKansoLocksLockForBackground(that: this);
 
   Future<Saved> lockNote({required String id, required String password}) =>
       KansoCore.instance.api.crateApiLocksKansoLocksLockNote(
@@ -38296,9 +37863,7 @@ class KansoLocksImpl extends RustOpaque implements KansoLocks {
       );
 
   Future<LockStatus> lockStatus() =>
-      KansoCore.instance.api.crateApiLocksKansoLocksLockStatus(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiLocksKansoLocksLockStatus(that: this);
 
   Future<bool> notebookIsOpen({required String bookId}) => KansoCore
       .instance
@@ -38313,10 +37878,8 @@ class KansoLocksImpl extends RustOpaque implements KansoLocks {
       .api
       .crateApiLocksKansoLocksRemoveNotebookLock(that: this, bookId: bookId);
 
-  Future<void> turnOffBiometrics() =>
-      KansoCore.instance.api.crateApiLocksKansoLocksTurnOffBiometrics(
-        that: this,
-      );
+  Future<void> turnOffBiometrics() => KansoCore.instance.api
+      .crateApiLocksKansoLocksTurnOffBiometrics(that: this);
 
   Future<bool> unlock({required String password}) => KansoCore.instance.api
       .crateApiLocksKansoLocksUnlock(that: this, password: password);
@@ -38363,19 +37926,13 @@ class KansoMetricsImpl extends RustOpaque implements KansoMetrics {
 
   /// Notes that the app was launched (once per process).
   Future<void> launched() =>
-      KansoCore.instance.api.crateApiMetricsKansoMetricsLaunched(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiMetricsKansoMetricsLaunched(that: this);
 
-  Future<void> markNoticeSeen() =>
-      KansoCore.instance.api.crateApiMetricsKansoMetricsMarkNoticeSeen(
-        that: this,
-      );
+  Future<void> markNoticeSeen() => KansoCore.instance.api
+      .crateApiMetricsKansoMetricsMarkNoticeSeen(that: this);
 
   Future<bool> noticeSeen() =>
-      KansoCore.instance.api.crateApiMetricsKansoMetricsNoticeSeen(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiMetricsKansoMetricsNoticeSeen(that: this);
 
   /// Counts a feature by its closed name. The Rust side rejects unknown
   /// names; Dart never gets an open-ended event API.
@@ -38710,17 +38267,13 @@ class KansoSharedImpl extends RustOpaque implements KansoShared {
   /// What a sync of shared notes found, each time, until Dart stops
   /// listening.
   Stream<SharedEvent> events() =>
-      KansoCore.instance.api.crateApiSharedKansoSharedEvents(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiSharedKansoSharedEvents(that: this);
 
   Future<ShareInfo?> info({required String noteId}) => KansoCore.instance.api
       .crateApiSharedKansoSharedInfo(that: this, noteId: noteId);
 
   Future<List<InvitationRow>> invitations() =>
-      KansoCore.instance.api.crateApiSharedKansoSharedInvitations(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiSharedKansoSharedInvitations(that: this);
 
   Future<ShareInfo> invite({
     required String noteId,
@@ -38801,9 +38354,7 @@ class KansoSharedImpl extends RustOpaque implements KansoShared {
       .crateApiSharedKansoSharedStop(that: this, noteId: noteId);
 
   Future<SharedEvent> syncShared() =>
-      KansoCore.instance.api.crateApiSharedKansoSharedSyncShared(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiSharedKansoSharedSyncShared(that: this);
 
   Future<void> verifyPerson({required String accountId}) => KansoCore
       .instance
@@ -38836,16 +38387,12 @@ class KansoSyncImpl extends RustOpaque implements KansoSync {
       .crateApiSyncKansoSyncCheckServer(that: this, url: url);
 
   Future<bool> pushEnabled() =>
-      KansoCore.instance.api.crateApiSyncKansoSyncPushEnabled(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiSyncKansoSyncPushEnabled(that: this);
 
   /// Registers (or removes) the remembered token to match the settings;
   /// the retry after a failed registration.
   Future<void> refreshPush() =>
-      KansoCore.instance.api.crateApiSyncKansoSyncRefreshPush(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiSyncKansoSyncRefreshPush(that: this);
 
   /// The app is in front (`true`) or not.
   Future<void> setForeground({required bool foreground}) => KansoCore
@@ -38879,9 +38426,7 @@ class KansoSyncImpl extends RustOpaque implements KansoSync {
   );
 
   Future<SyncSettingsRow> settings() =>
-      KansoCore.instance.api.crateApiSyncKansoSyncSettings(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiSyncKansoSyncSettings(that: this);
 
   Future<SyncStatus> signInPassword({
     required String server,
@@ -38896,25 +38441,18 @@ class KansoSyncImpl extends RustOpaque implements KansoSync {
     deviceName: deviceName,
   );
 
-  Future<void> signOut() => KansoCore.instance.api.crateApiSyncKansoSyncSignOut(
-    that: this,
-  );
+  Future<void> signOut() =>
+      KansoCore.instance.api.crateApiSyncKansoSyncSignOut(that: this);
 
   Future<SyncStatus> status() =>
-      KansoCore.instance.api.crateApiSyncKansoSyncStatus(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiSyncKansoSyncStatus(that: this);
 
   /// The status now and each time it changes, until Dart stops listening.
   Stream<SyncStatus> statusStream() =>
-      KansoCore.instance.api.crateApiSyncKansoSyncStatusStream(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiSyncKansoSyncStatusStream(that: this);
 
   Future<SyncReportRow> syncNow() =>
-      KansoCore.instance.api.crateApiSyncKansoSyncSyncNow(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiSyncKansoSyncSyncNow(that: this);
 }
 
 @sealed
@@ -38948,9 +38486,7 @@ class KansoThemesImpl extends RustOpaque implements KansoThemes {
   );
 
   Future<List<InstalledIconThemeRow>> iconThemes() =>
-      KansoCore.instance.api.crateApiThemesKansoThemesIconThemes(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiThemesKansoThemesIconThemes(that: this);
 
   Future<ThemeImport> import_({required String path}) => KansoCore.instance.api
       .crateApiThemesKansoThemesImport(that: this, path: path);
@@ -38961,14 +38497,10 @@ class KansoThemesImpl extends RustOpaque implements KansoThemes {
       .crateApiThemesKansoThemesImportIconTheme(that: this, path: path);
 
   Future<List<ThemeRow>> list() =>
-      KansoCore.instance.api.crateApiThemesKansoThemesList(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiThemesKansoThemesList(that: this);
 
   Future<List<ThemeNotice>> notices() =>
-      KansoCore.instance.api.crateApiThemesKansoThemesNotices(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiThemesKansoThemesNotices(that: this);
 
   Future<List<StyledRun>> styledRuns({
     required String text,
@@ -39060,15 +38592,11 @@ class KansoTriageImpl extends RustOpaque implements KansoTriage {
       );
 
   Future<TriageSettings> settings() =>
-      KansoCore.instance.api.crateApiTriageKansoTriageSettings(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiTriageKansoTriageSettings(that: this);
 
   /// How many notes wait, and what is switched on.
   Future<TriageStatus> status() =>
-      KansoCore.instance.api.crateApiTriageKansoTriageStatus(
-        that: this,
-      );
+      KansoCore.instance.api.crateApiTriageKansoTriageStatus(that: this);
 
   Future<void> unreject({
     required String noteId,
